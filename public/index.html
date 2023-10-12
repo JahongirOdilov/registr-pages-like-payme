@@ -12,6 +12,10 @@
 		/>
 	</head>
 	<body>
+		<div style="display: flex" class="pay">
+			<h2 style="color: black">Pay</h2>
+			<h2 style="color: #4ed1d0">me</h2>
+		</div>
 		<div class="login-box login-page">
 			<span>Log in</span>
 			<form class="form1">
@@ -30,33 +34,43 @@
 			</form>
 		</div>
 
-		<div class="login-box register-page" style="display: none">
+		<div class="login-box register-page">
 			<span>Register</span>
 			<form class="form2">
-				<div class="user-box">
-					<input class="register-email" type="email" name="" required="" />
-					<label>Email</label>
-				</div>
-				<div class="user-box">
-					<input class="register-password" type="password" name="" required="" />
-					<label>Password</label>
-				</div>
-				<div class="user-box">
-					<input class="register-confirm" type="password" name="" required="" />
-					<label>Confirm password</label>
-				</div>
-
-				<div class="user-box">
-					<input class="register-name" type="name" name="" required="" />
-					<label>Name</label>
-				</div>
-				<div class="user-box">
-					<input class="register-username" type="username" name="" required="" />
-					<label>Username</label>
-				</div>
-				<div class="user-box">
-					<input class="register-phone" type="tel" name="" required="" />
-					<label>+998_(00)_000-00-00</label>
+				<div class="container">
+					<div class="box">
+						<div class="user-box">
+							<input class="register-email" type="email" name="" required="" />
+							<label>Email</label>
+							<div class="invalid1 invalid"></div>
+						</div>
+						<div class="user-box">
+							<input class="register-password" type="password" name="" required="" />
+							<label>Password</label>
+							<div class="invalid2 invalid"></div>
+						</div>
+						<div class="user-box">
+							<input class="register-confirm" type="password" name="" required="" />
+							<label>Confirm password</label>
+							<div class="invalid3 invalid"></div>
+						</div>
+					</div>
+					<div class="box">
+						<div class="user-box">
+							<input class="register-name" type="name" name="" required="" />
+							<label>Name</label>
+							<div class="invalid4 invalid"></div>
+						</div>
+						<div class="user-box">
+							<input class="register-username" type="username" name="" required="" />
+							<label>Username</label>
+							<div class="invalid5 invalid"></div>
+						</div>
+						<div class="user-box">
+							<input class="register-phone" type="tel" name="" required="" />
+							<label>Phone number</label>
+						</div>
+					</div>
 				</div>
 				<div class="tag">
 					<a class="forget-password" href="">FORGET PASSWORD</a>
@@ -67,7 +81,8 @@
 			</form>
 		</div>
 
-		<div class="login-box forget-page" style="display: none">
+		<div class="login-box forget-page">
+			<span class="reset">Reset password</span>
 			<form class="form3">
 				<div class="user-box">
 					<input type="email" name="" required="" />
@@ -85,6 +100,10 @@
 					<button>NEXT</button>
 				</center>
 			</form>
+		</div>
+
+		<div class="registered">
+			<h1>SUCCESFULL ✅</h1>
 		</div>
 	</body>
 </html>

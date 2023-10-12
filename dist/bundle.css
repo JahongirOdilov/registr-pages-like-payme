@@ -90,12 +90,14 @@ span {
 }
 
 .registered {
-	display: none;
+	display: flex;
+	font-size: 20px;
 	letter-spacing: 2px;
-	place-items: center;
+	align-items: center;
+	justify-content: center;
 	position: absolute;
-	top: 50%;
-	left: 50%;
+	top: 40%;
+	left: 35%;
 	color: #38ab24;
 }
 
@@ -151,6 +153,11 @@ span {
 	span {
 		font-size: 25px;
 		margin-top: 30px;
+	}
+	.registered {
+		position: absolute;
+		top: 40%;
+		left: 20%;
 	}
 }
 

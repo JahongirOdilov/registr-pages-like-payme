@@ -1,4 +1,5 @@
 import * as yup from "yup";
+import IMask from "imask";
 
 const form2: HTMLFormElement = document.querySelector(".form2")!;
 const inputRegisterEmail: HTMLInputElement = document.querySelector(".register-email")!;
@@ -11,6 +12,10 @@ const forgetTag: HTMLAnchorElement = document.querySelector(".forget-password")!
 const invalidRegister: HTMLDivElement = document.querySelector(".invalid-login-password")!;
 const loginPage: HTMLDivElement = document.querySelector(".login-page")!;
 const registerPage: HTMLDivElement = document.querySelector(".register-page")!;
+
+IMask(inputRegisterPhoneNumber, {
+	mask: "+{998}(00) 000-00-00",
+});
 
 const schema = yup.object().shape({
 	inputRegisterEmail: yup.string().email().required("Brand is required"),

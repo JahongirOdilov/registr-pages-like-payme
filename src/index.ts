@@ -1,3 +1,7 @@
 import "./main.css";
-// const img: HTMLImageElement = document.querySelector("img")!;
-// img.src = "./payme.png";
+import "./login-page";
+import "./register-page";
+import "./forget-page";
+
+
+

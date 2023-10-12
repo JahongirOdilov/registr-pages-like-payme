@@ -12,16 +12,17 @@
 		/>
 	</head>
 	<body>
-		<div class="login-box login-page">
+		<div class="login-box login-page" style="display: none">
 			<span>Log in</span>
 			<form class="form1">
 				<div class="user-box">
-					<input type="email" name="" required="" />
+					<input class="log-email" type="email" name="" required="" />
 					<label>Email</label>
 				</div>
 				<div class="user-box">
-					<input type="password" name="" required="" />
+					<input class="log-password" type="password" name="" required="" />
 					<label>Password</label>
+					<div class="invalid-login-password"></div>
 				</div>
 				<center>
 					<button>NEXT</button>
@@ -29,44 +30,45 @@
 			</form>
 		</div>
 
-		<div class="register-page login-box" style="display: none">
+		<div class="login-box register-page">
+			<span>Register</span>
 			<form class="form2">
 				<div class="user-box">
-					<input type="email" name="" required="" />
+					<input class="register-email" type="email" name="" required="" />
 					<label>Email</label>
 				</div>
 				<div class="user-box">
-					<input type="password" name="" required="" />
+					<input class="register-password" type="password" name="" required="" />
 					<label>Password</label>
 				</div>
 				<div class="user-box">
-					<input type="password" name="" required="" />
+					<input class="register-confirm" type="password" name="" required="" />
 					<label>Confirm password</label>
 				</div>
 
 				<div class="user-box">
-					<input type="name" name="" required="" />
+					<input class="register-name" type="name" name="" required="" />
 					<label>Name</label>
 				</div>
 				<div class="user-box">
-					<input type="username" name="" required="" />
+					<input class="register-username" type="username" name="" required="" />
 					<label>Username</label>
 				</div>
 				<div class="user-box">
-					<input type="tel" name="" required="" />
+					<input class="register-phone" type="tel" name="" required="" />
 					<label>+998_(00)_000-00-00</label>
 				</div>
-				<div class="forget-password">
-					<a href="">FORGET PASSWORD</a>
+				<div class="tag">
+					<a class="forget-password" href="">FORGET PASSWORD</a>
 				</div>
 				<center>
-					<button>ENTER</button>
+					<button>DONE</button>
 				</center>
 			</form>
 		</div>
 
 		<div class="login-box forget-page" style="display: none">
-			<form class="form1">
+			<form class="form3">
 				<div class="user-box">
 					<input type="email" name="" required="" />
 					<label>Email</label>

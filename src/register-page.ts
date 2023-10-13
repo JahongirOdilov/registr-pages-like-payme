@@ -72,10 +72,10 @@ form2.addEventListener("submit", (e) => {
 				invalid3.innerText = "Confirm Password is incorrect";
 			}
 			if (error.path === "inputRegisterName" || inputRegisterName.value === "") {
-				invalid4.innerText = "Please create correct Username ";
+				invalid4.innerText = "Please create correct Name ";
 			}
 			if (error.path === "inputRegisterUsername" || inputRegisterUsername.value === "") {
-				invalid4.innerText = "Please create correct Username ";
+				invalid5.innerText = "Please create correct Username ";
 			}
 		});
 });

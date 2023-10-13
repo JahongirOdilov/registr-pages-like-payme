@@ -73,7 +73,7 @@
 					</div>
 				</div>
 				<div class="tag">
-					<a class="forget-password" href="">FORGET PASSWORD</a>
+					<a class="forget-password-link" href="">FORGET PASSWORD</a>
 				</div>
 				<center>
 					<button>DONE</button>
@@ -85,16 +85,18 @@
 			<span class="reset">Reset password</span>
 			<form class="form3">
 				<div class="user-box">
-					<input type="email" name="" required="" />
+					<input class="forget-email" type="email" name="" required="" />
 					<label>Email</label>
 				</div>
 				<div class="user-box">
-					<input type="password" name="" required="" />
+					<input class="forget-password" type="password" name="" required="" />
 					<label>Password</label>
+					<div class="invalid1 invalid"></div>
 				</div>
 				<div class="user-box">
-					<input type="text" name="" required="" />
+					<input class="forget-confirm" type="text" name="" required="" />
 					<label>Confirm Password</label>
+					<div class="invalid2 invalid"></div>
 				</div>
 				<center>
 					<button>NEXT</button>
